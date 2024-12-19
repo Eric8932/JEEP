@@ -1,0 +1,37 @@
+{
+ "layers_low": [5,6,7,8,9,10],
+ "clamp_norm_factor_low": 1,
+ "layer_selection_low": "all",
+ "fact_token_low": "subject_last",
+ "v_weight_decay_low": 0.5,
+ "kl_factor_low": 0.0625,
+ "mom2_adjustment_low": true,
+ "mom2_update_weight_low": 6000,
+"rewrite_module_tmp_low": "model.layers.{}.mlp.down_proj",
+
+"layers_high": [22,23,24],
+"clamp_norm_factor_high": 0.7,
+"layer_selection_high": "all",
+"fact_token_high": "pred_last",
+"v_weight_decay_high": 0.5,
+"kl_factor_high": 0,
+"mom2_adjustment_high": true,
+"mom2_update_weight_high": 3000,
+"rewrite_module_tmp_high": "model.layers.{}.mlp.down_proj",
+ 
+
+ "v_num_grad_steps": 30,
+ "v_lr": 0.5,
+ "v_loss_layer": 31,
+ "layer_module_tmp": "model.layers.{}",
+ "mlp_module_tmp": "model.layers.{}.mlp",
+ "attn_module_tmp": "model.layers.{}.self_attn",
+ "ln_f_module": "model.norm",
+ "lm_head_module": "lm_head",
+ "mom2_dataset": "wikipedia",
+ "mom2_n_samples": 100000,
+ "mom2_dtype": "float32",
+ "emb_module_tmp":"model.embed_tokens",
+ "min_loss": 0.9
+ 
+}
