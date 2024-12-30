@@ -87,7 +87,16 @@ python3 -m experiments.parse_results \
     --edit_num 1 
 ```
 
+## How to Cite
 
+```bibtex
+@article{shi2024joint,
+  title={Joint Knowledge Editing for Information Enrichment and Probability Promotion},
+  author={Shi, Wenhang and Chen, Yiren and Bian, Shuqing and Zhang, Xinyi and Zhao, Zhe and Hu, Pengfei and Lu, Wei and Du, Xiaoyong},
+  journal={arXiv preprint arXiv:2412.17872},
+  year={2024}
+}
+```
 
 ## Contact information
 
